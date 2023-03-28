@@ -183,17 +183,17 @@ class TasksState extends State<Tasks>{
             title: Text('Ready to answer a few questions?'),
             subtitle: Text('It will only take a minute'),
           ),
-          ButtonTheme.bar( // make buttons use the appropriate styles for cards
+          ButtonBarTheme( // make buttons use the appropriate styles for cards
             child: ButtonBar(
               children: <Widget>[
-                FlatButton(
+                TextButton(
                   child: const Text('Yes!'),
                   onPressed: () { 
                     Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => Questions(document)));
                    },
                 ),
-                FlatButton(
+                TextButton(
                   child: const Text('Not now'),
                   onPressed: () { 
                     setState(() {

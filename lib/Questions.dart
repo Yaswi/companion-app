@@ -78,7 +78,7 @@ class QuestionsState extends State<Questions>{
           ),
           alignment: Alignment.center,
         ),
-        Align(child:FlatButton(
+        Align(child:TextButton(
               child: Text("Next"),
               onPressed:(){ Navigator.pop(context);},
             ),

@@ -60,16 +60,16 @@ class DashboardState extends State<Dashboard>{
               ) ,
                
             
-            ButtonTheme.bar( // makes buttons use the appropriate styles for cards
+            ButtonBarTheme( // makes buttons use the appropriate styles for cards
             child: ButtonBar(
               children: <Widget>[
-                FlatButton(
+                TextButton(
                   child: const Text('Share'),
                   onPressed: () { 
                     //TODO Implement share to social media
                    },
                 ),
-                FlatButton(
+                TextButton(
                   child: const Text('Dismiss'),
                   onPressed: () { 
                     setState(() {
